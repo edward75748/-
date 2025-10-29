@@ -5,3 +5,7 @@ __pycache__/
 .env
 .venv/
 pytest_cache/
+node_modules/
+dist/
+coverage/
+.DS_Store
