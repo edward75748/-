@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gomoku</title>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Gomoku</h1>
+        <p id="statusText" class="status">Black to move</p>
+        <p id="resultText" class="result" aria-live="polite"></p>
+      </header>
+      <section class="board-section">
+        <div class="board-wrapper">
+          <canvas id="board" aria-label="Gomoku board" role="img"></canvas>
+        </div>
+      </section>
+      <section class="controls" aria-label="Game controls">
+        <label class="control control--mode" for="modeSelect">
+          Mode
+          <select id="modeSelect">
+            <option value="pvp">Player vs Player</option>
+            <option value="ai">Player vs AI</option>
+          </select>
+        </label>
+        <button id="undoButton" type="button">Undo</button>
+        <button id="restartButton" type="button">Restart</button>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
